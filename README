@@ -1,1 +1,144 @@
-Titulo Problema de Negocio Objectivos del Analisis Datos utilizados Tecnologias y librerias
+# 🧠 Segmentación de Clientes de E-commerce con K-Means
+
+## 📌 Problema de Negocio
+En el entorno del comercio electrónico, comprender el comportamiento de los clientes es clave para maximizar ingresos y mejorar la experiencia del usuario.
+
+Sin una segmentación adecuada, las empresas enfrentan:
+- Campañas de marketing genéricas y poco efectivas  
+- Baja personalización en la experiencia del cliente  
+- Dificultad para identificar clientes de alto valor  
+
+Esto impacta directamente en:
+- Menor tasa de conversión  
+- Baja retención de clientes  
+- Pérdida de oportunidades de crecimiento  
+
+👉 **Solución:** aplicar técnicas de clustering para segmentar clientes en grupos homogéneos y facilitar decisiones estratégicas basadas en datos.
+
+---
+
+## 🎯 Objetivos del Análisis
+
+### Objetivo principal
+Identificar segmentos de clientes mediante el algoritmo **K-Means** para mejorar la toma de decisiones en marketing y negocio.
+
+### Objetivos específicos
+- Analizar el comportamiento de clientes a partir de variables clave  
+- Realizar limpieza y transformación de datos  
+- Explorar patrones mediante análisis exploratorio (EDA)  
+- Determinar el número óptimo de clusters (Elbow Method)  
+- Aplicar el algoritmo **K-Means**  
+- Interpretar y caracterizar cada segmento  
+- Generar insights accionables para el negocio  
+
+---
+
+## 📊 Datos Utilizados
+
+El dataset contiene información de comportamiento de clientes de una tienda online (~55,000 registros).
+
+### Variables principales:
+- `ID` → identificador del cliente  
+- `n_clicks` → número de clicks  
+- `n_visitas` → visitas al sitio  
+- `monto_compras` → gasto total  
+- `monto_descuentos` → descuentos recibidos  
+- `dias_primera_compra` → antigüedad del cliente  
+- `info_perfil` → nivel de información del usuario  
+
+### Procesamiento realizado:
+- Limpieza de datos y eliminación de inconsistencias  
+- Normalización de variables (clave para K-Means)  
+- Análisis exploratorio para entender distribuciones  
+- Identificación de patrones y correlaciones  
+
+---
+
+## ⚙️ Tecnologías y Librerías
+
+### Tecnologías
+- Python  
+- Jupyter Notebook  
+
+### Librerías
+- **pandas** → manipulación de datos  
+- **numpy** → cálculos numéricos  
+- **matplotlib** → visualización  
+- **seaborn** → análisis exploratorio  
+- **scikit-learn** → K-Means, escalado y métricas  
+
+---
+
+## 📈 Resultados Clave
+
+### 🔹 Determinación del número óptimo de clusters
+Se utilizó el método del codo (**Elbow Method**) para encontrar el número ideal de segmentos.
+
+📌 Resultado: **K óptimo ≈ 4–5 clusters**
+
+---
+
+### 🔹 Segmentos identificados (ejemplo interpretativo)
+
+**Cluster 1 – Clientes Premium**
+- Alto gasto  
+- Alta interacción  
+- Alta frecuencia de compra  
+👉 Estrategia: programas VIP, fidelización  
+
+**Cluster 2 – Clientes Frecuentes de Bajo Ticket**
+- Muchas visitas  
+- Bajo gasto  
+👉 Estrategia: aumentar ticket promedio  
+
+**Cluster 3 – Clientes Ocasionales**
+- Baja frecuencia  
+- Bajo engagement  
+👉 Estrategia: campañas de reactivación  
+
+**Cluster 4 – Clientes Sensibles a Descuentos**
+- Alto uso de descuentos  
+👉 Estrategia: promociones personalizadas  
+
+---
+
+## 💡 Insights de Negocio
+
+- No todos los clientes tienen el mismo valor → segmentación permite priorizar recursos  
+- Un pequeño grupo de clientes genera gran parte de los ingresos (principio de Pareto)  
+- Los descuentos influyen significativamente en ciertos segmentos  
+- La frecuencia de interacción es un predictor clave del valor del cliente  
+
+---
+
+## 🚀 Impacto Potencial
+
+Este modelo permite a la empresa:
+
+- Incrementar la conversión mediante marketing personalizado  
+- Mejorar la retención de clientes  
+- Optimizar campañas promocionales  
+- Aumentar el Customer Lifetime Value (CLV)  
+
+---
+
+## 📊 Visualizaciones Clave (recomendadas para GitHub)
+
+👉 Agrega estas imágenes en tu repo para hacerlo más profesional:
+
+- Gráfico del **Elbow Method**
+- Scatter plot de clusters (2D con PCA)
+- Distribución de variables por cluster
+
+---
+
+## 🔮 Mejoras Futuras
+
+- Implementar **PCA** para visualización avanzada  
+- Probar algoritmos alternativos:
+  - DBSCAN  
+  - Hierarchical Clustering  
+- Integrar modelo en un sistema de recomendación  
+- Automatizar segmentación en tiempo real  
+
+---
